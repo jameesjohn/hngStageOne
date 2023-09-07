@@ -63,7 +63,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	http.HandleFunc("/api", handler)
+	http.HandleFunc("/api/stageOne", handler)
 
 	log.Println("Go server listening on :8080")
 	log.Fatal(http.ListenAndServe(":8080", nil))
