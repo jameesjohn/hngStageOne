@@ -54,7 +54,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		Track:         track,
 		CurrentDay:    now.Format("Monday"),
 		UtcTime:       now.UTC().Format(time.RFC3339),
-		GithubFileUrl: "github.something",
+		GithubFileUrl: "https://github.com/jameesjohn/hngStageOne/blob/main/main.go",
 		GithubRepoUrl: "https://github.com/jameesjohn/hngStageOne",
 		StatusCode:    http.StatusOK,
 	}
